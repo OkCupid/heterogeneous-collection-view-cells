@@ -134,13 +134,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B912968F1F953E0E00ACCA68 /* VIew Controllers */ = {
+		B912968F1F953E0E00ACCA68 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B9A1656A1F950B1500B7D8EF /* UsersViewController.swift */,
 				B90C1C4F1F968B990094A60A /* ImageZoomViewController.swift */,
 			);
-			path = "VIew Controllers";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B91296941F95644800ACCA68 /* Networking */ = {
@@ -216,7 +216,7 @@
 				B912968E1F953DA300ACCA68 /* Models */,
 				B91296941F95644800ACCA68 /* Networking */,
 				B91652D01F96576C00FDB587 /* Storyboards */,
-				B912968F1F953E0E00ACCA68 /* VIew Controllers */,
+				B912968F1F953E0E00ACCA68 /* View Controllers */,
 			);
 			path = Heterogenous;
 			sourceTree = "<group>";
