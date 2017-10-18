@@ -112,17 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				B987B8BC1F9533FA00FE0DAA /* AdvertisementCollectionViewCell.swift */,
-				B912969F1F9566FC00ACCA68 /* AdvertisementCollectionViewCellConfigurationCommand.swift */,
-				B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */,
-				B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */,
 				B987B8BA1F95328F00FE0DAA /* CircularUserCollectionViewCell.swift */,
-				B91652CA1F9656F400FDB587 /* CircularUserCollectionViewCellViewModelFactory.swift */,
 				B9860D4B1F96A51600C50F60 /* UserCollectionViewCell.swift */,
-				B912969D1F95668300ACCA68 /* UserCollectionViewCellConfigurationCommand.swift */,
-				B90C1C531F968E510094A60A /* UserCollectionViewCellSelectionCommand.swift */,
-				B91296901F95625A00ACCA68 /* UsersCollectionViewCellViewModelFactory.swift */,
 				B987B8B81F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift */,
-				B91296921F95639000ACCA68 /* UserSnapshotCollectionViewCellConfigurationCommand.swift */,
 				B91652CC1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift */,
 			);
 			path = Cells;
@@ -172,6 +164,28 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B9860D7D1F97CD7100C50F60 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				B912969F1F9566FC00ACCA68 /* AdvertisementCollectionViewCellConfigurationCommand.swift */,
+				B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */,
+				B912969D1F95668300ACCA68 /* UserCollectionViewCellConfigurationCommand.swift */,
+				B90C1C531F968E510094A60A /* UserCollectionViewCellSelectionCommand.swift */,
+				B91296921F95639000ACCA68 /* UserSnapshotCollectionViewCellConfigurationCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		B9860D7E1F97CDBF00C50F60 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */,
+				B91652CA1F9656F400FDB587 /* CircularUserCollectionViewCellViewModelFactory.swift */,
+				B91296901F95625A00ACCA68 /* UsersCollectionViewCellViewModelFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		B9A165381F95042400B7D8EF = {
 			isa = PBXGroup;
 			children = (
@@ -194,13 +208,15 @@
 			isa = PBXGroup;
 			children = (
 				B9A165441F95042400B7D8EF /* AppDelegate.swift */,
-				B91296941F95644800ACCA68 /* Networking */,
-				B912968E1F953DA300ACCA68 /* Models */,
-				B912968F1F953E0E00ACCA68 /* VIew Controllers */,
-				B91652D01F96576C00FDB587 /* Storyboards */,
-				B912968D1F953D9200ACCA68 /* Cells */,
 				B9A1654B1F95042400B7D8EF /* Assets.xcassets */,
+				B912968D1F953D9200ACCA68 /* Cells */,
+				B9860D7D1F97CD7100C50F60 /* Commands */,
+				B9860D7E1F97CDBF00C50F60 /* Factories */,
 				B9A165501F95042400B7D8EF /* Info.plist */,
+				B912968E1F953DA300ACCA68 /* Models */,
+				B91296941F95644800ACCA68 /* Networking */,
+				B91652D01F96576C00FDB587 /* Storyboards */,
+				B912968F1F953E0E00ACCA68 /* VIew Controllers */,
 			);
 			path = Heterogenous;
 			sourceTree = "<group>";
