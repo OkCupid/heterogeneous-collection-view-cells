@@ -27,6 +27,7 @@
 		B91652CF1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */; };
 		B91652D21F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */; };
 		B9860D4C1F96A51600C50F60 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9860D4B1F96A51600C50F60 /* UserCollectionViewCell.swift */; };
+		B9860D821F97E15600C50F60 /* CollectionViewCellMacroCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */; };
 		B987B8B91F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987B8B81F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift */; };
 		B987B8BB1F95328F00FE0DAA /* CircularUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987B8BA1F95328F00FE0DAA /* CircularUserCollectionViewCell.swift */; };
 		B987B8BD1F9533FA00FE0DAA /* AdvertisementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987B8BC1F9533FA00FE0DAA /* AdvertisementCollectionViewCell.swift */; };
@@ -72,6 +73,7 @@
 		B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCollectionViewCellViewModelFactory.swift; sourceTree = "<group>"; };
 		B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCollectionViewCellSelectionCommand.swift; sourceTree = "<group>"; };
 		B9860D4B1F96A51600C50F60 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellMacroCommand.swift; sourceTree = "<group>"; };
 		B987B8B81F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSnapshotCollectionViewCell.swift; sourceTree = "<group>"; };
 		B987B8BA1F95328F00FE0DAA /* CircularUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		B987B8BC1F9533FA00FE0DAA /* AdvertisementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -125,8 +127,6 @@
 			children = (
 				B91296A11F95674F00ACCA68 /* Advertisement.swift */,
 				B90C1C4B1F967A3A0094A60A /* AdvertisementType.swift */,
-				B90C1C471F965B940094A60A /* CollectionViewCellCommand.swift */,
-				B90C1C491F965BBF0094A60A /* CollectionViewCellCommandKey.swift */,
 				B9A165641F95048C00B7D8EF /* CollectionViewCellViewModel.swift */,
 				B9A165661F95067500B7D8EF /* User.swift */,
 				B9A165681F95068C00B7D8EF /* UserType.swift */,
@@ -167,6 +167,9 @@
 		B9860D7D1F97CD7100C50F60 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				B90C1C491F965BBF0094A60A /* CollectionViewCellCommandKey.swift */,
+				B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */,
+				B90C1C471F965B940094A60A /* CollectionViewCellCommand.swift */,
 				B912969F1F9566FC00ACCA68 /* AdvertisementCollectionViewCellConfigurationCommand.swift */,
 				B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */,
 				B912969D1F95668300ACCA68 /* UserCollectionViewCellConfigurationCommand.swift */,
@@ -341,6 +344,7 @@
 				B91296A21F95674F00ACCA68 /* Advertisement.swift in Sources */,
 				B91296931F95639000ACCA68 /* UserSnapshotCollectionViewCellConfigurationCommand.swift in Sources */,
 				B9860D4C1F96A51600C50F60 /* UserCollectionViewCell.swift in Sources */,
+				B9860D821F97E15600C50F60 /* CollectionViewCellMacroCommand.swift in Sources */,
 				B90C1C4A1F965BBF0094A60A /* CollectionViewCellCommandKey.swift in Sources */,
 				B91296911F95625A00ACCA68 /* UsersCollectionViewCellViewModelFactory.swift in Sources */,
 				B90C1C481F965B940094A60A /* CollectionViewCellCommand.swift in Sources */,

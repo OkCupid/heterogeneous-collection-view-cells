@@ -34,7 +34,7 @@ class UsersViewController: UIViewController, UICollectionViewDataSource, UIColle
         viewModels.insert(contentsOf: ads, at: viewModels.count / 2)
     }
 
-    // MARK: - Collection View Data Source
+    // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModels.count
@@ -50,7 +50,7 @@ class UsersViewController: UIViewController, UICollectionViewDataSource, UIColle
         return cell
     }
 
-    // MARK: Collection View Delegate
+    // MARK: UICollectionViewDelegate
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) else {
