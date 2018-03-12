@@ -8,13 +8,21 @@
 
 import UIKit
 
-struct AdvertisementCollectionViewCellViewModelFactory {
+struct AdvertisementCollectionViewCellViewModelFactory: CollectionViewCellViewModelAbstractFactory {
 
-    func create(advertisement: Advertisement, application: UIApplication) -> CollectionViewCellViewModel {
+    private let advertisement: Advertisement
+    private weak var viewController: UIViewController?
+
+    init(advertisement: Advertisement, viewController: UIViewController?) {
+        self.advertisement = advertisement
+        self.viewController = viewController
+    }
+
+    func create() -> CollectionViewCellViewModelProtocol {
         let size = CGSize(width: 220, height: 220)
         let configurationCommand = AdvertisementCollectionViewCellConfigurationCommand(advertisement: advertisement, imageNetworkManager: ImageNetworkManager())
-        let selectionCommand = AdvertisementCollectionViewCellSelectionCommand(advertisement: advertisement, application: application)
-        let commands: [CollectionViewCellCommandKey: CollectionViewCellCommand] = [
+        let selectionCommand = AdvertisementCollectionViewCellSelectionCommand(advertisement: advertisement, viewController: viewController)
+        let commands: [CommandKey: Command] = [
             .configuration: configurationCommand,
             .selection: selectionCommand
         ]

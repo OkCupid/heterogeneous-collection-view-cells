@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct UserSnapshotCollectionViewCellConfigurationCommand: CollectionViewCellCommand {
+struct UserSnapshotCollectionViewCellConfigurationCommand: Command {
 
     private let user: User
     private let imageNetworkManager: ImageNetworkManagerProtocol
@@ -18,13 +18,13 @@ struct UserSnapshotCollectionViewCellConfigurationCommand: CollectionViewCellCom
         self.imageNetworkManager = imageNetworkManager
     }
 
-    func perform(cell: UICollectionViewCell) {
-        guard let cell = cell as? UserSnapshotCollectionViewCell else {
+    func perform(arguments: [CommandArgumentKey: Any]?) {
+        guard let cell = arguments?[.cell] as? UserSnapshotCollectionViewCell else {
             return
         }
 
         let command = UserCollectionViewCellConfigurationCommand(user: user, imageNetworkManager: imageNetworkManager)
-        command.perform(cell: cell)
+        command.perform(arguments: [.cell: cell])
 
         if let backgroundUrl = user.backgroundUrl {
             _ = imageNetworkManager.request(url: backgroundUrl) { (image) in

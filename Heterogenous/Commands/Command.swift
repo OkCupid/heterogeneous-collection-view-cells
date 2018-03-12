@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol CollectionViewCellCommand {
-    func perform(cell: UICollectionViewCell)
+protocol Command {
+    func perform(arguments: [CommandArgumentKey: Any]?)
 }

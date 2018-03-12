@@ -8,16 +8,9 @@
 
 import Foundation
 
-struct Advertisement {
+struct Advertisement: Codable {
     let id: Int
     let contentUrl: URL
     let clickthroughUrl: URL
     let type: AdvertisementType
-
-    // Test data
-    static var all: [Advertisement] {
-        return [
-            Advertisement(id: 1, contentUrl: URL(string: "https://cdn.okccdn.com/media/img/hub/mediakit/okcupid_darkbg.png")!, clickthroughUrl: URL(string: "https://okcupid.com/home")!, type: .image)
-        ]
-    }
 }

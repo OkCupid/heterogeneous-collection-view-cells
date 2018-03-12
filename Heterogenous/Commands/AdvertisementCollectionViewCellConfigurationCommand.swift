@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdvertisementCollectionViewCellConfigurationCommand: CollectionViewCellCommand {
+class AdvertisementCollectionViewCellConfigurationCommand: Command {
 
     private let advertisement: Advertisement
     private let imageNetworkManager: ImageNetworkManagerProtocol
@@ -18,8 +18,8 @@ class AdvertisementCollectionViewCellConfigurationCommand: CollectionViewCellCom
         self.imageNetworkManager = imageNetworkManager
     }
 
-    func perform(cell: UICollectionViewCell) {
-        guard let cell = cell as? AdvertisementCollectionViewCell else {
+    func perform(arguments: [CommandArgumentKey: Any]?) {
+        guard let cell = arguments?[.cell] as? AdvertisementCollectionViewCell else {
             return
         }
 

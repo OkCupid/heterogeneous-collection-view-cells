@@ -8,18 +8,27 @@
 
 import UIKit
 
-struct UsersCollectionViewCellViewModelFactory {
+struct UsersCollectionViewCellViewModelFactory: CollectionViewCellViewModelAbstractFactory {
 
-    private let snapshotFactory = UserSnapshotCollectionViewCellViewModelFactory()
-    private let circularFactory = CircularUserCollectionViewCellViewModelFactory()
+    private let user: User
+    private weak var viewController: UIViewController?
 
-    func create(user: User, viewController: UIViewController) -> CollectionViewCellViewModel {
+    private var factory: CollectionViewCellViewModelAbstractFactory {
         switch user.type {
         case .regular:
-            return circularFactory.create(user: user, viewController: viewController)
+            return CircularUserCollectionViewCellViewModelFactory(user: user, viewController: viewController)
         case .featured:
-            return snapshotFactory.create(user: user, viewController: viewController)
+            return UserSnapshotCollectionViewCellViewModelFactory(user: user, viewController: viewController)
         }
+    }
+
+    init(user: User, viewController: UIViewController?) {
+        self.user = user
+        self.viewController = viewController
+    }
+
+    func create() -> CollectionViewCellViewModelProtocol {
+        return factory.create()
     }
 
 }

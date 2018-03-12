@@ -1,0 +1,44 @@
+[
+  {
+    "klass": "user",
+    "username": "Tongue Twister",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/541920956449435651/iHq9_qcq.png",
+    "backgroundUrl": "https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?w=738",
+    "type": "featured"
+  },
+  {
+    "klass": "advertisement",
+    "id": 1,
+    "contentUrl": "https://cdn.okccdn.com/media/img/hub/mediakit/okcupid_darkbg.png",
+    "clickthroughUrl": "https://okcupid.com/home",
+    "type": "image"
+  },
+  {
+    "klass": "user",
+    "username": "Sunglasses",
+    "avatarUrl": "https://i.pinimg.com/736x/25/b9/24/25b924f1d18fea2c7dfcb26a9905c1e8--funny-emoji-emoji-png.jpg",
+    "backgroundUrl": "https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?w=738",
+    "type": "regular"
+  },
+  {
+    "klass": "user",
+    "username": "Glasses",
+    "avatarUrl": "http://cdn.shopify.com/s/files/1/1061/1924/products/Nerd_with_Glasses_Emoji_2a8485bc-f136-4156-9af6-297d8522d8d1_grande.png?v=1483276509",
+    "backgroundUrl": "https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?w=738",
+    "type": "featured"
+  },
+  {
+    "klass": "advertisement",
+    "id": 1,
+    "contentUrl": "https://cdn.okccdn.com/media/img/hub/mediakit/okcupid_darkbg.png",
+    "clickthroughUrl": "https://okcupid.com/home",
+    "type": "image"
+  },
+  {
+    "klass": "user",
+    "username": "Cash",
+    "avatarUrl": "http://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-10/256/money-mouth-face.png",
+    "backgroundUrl": "https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?w=738",
+    "type": "regular"
+  }
+]

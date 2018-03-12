@@ -8,15 +8,15 @@
 
 import UIKit
 
-struct CollectionViewCellMacroCommand: CollectionViewCellCommand {
+struct CollectionViewCellMacroCommand: Command {
 
-    private let commands: [CollectionViewCellCommand]
+    private let commands: [Command]
 
-    init(commands: [CollectionViewCellCommand]) {
+    init(commands: [Command]) {
         self.commands = commands
     }
 
-    func perform(cell: UICollectionViewCell) {
-        commands.forEach { $0.perform(cell: cell) }
+    func perform(arguments: [CommandArgumentKey: Any]?) {
+        commands.forEach { $0.perform(arguments: arguments) }
     }
 }

@@ -8,13 +8,21 @@
 
 import UIKit
 
-struct CircularUserCollectionViewCellViewModelFactory {
+struct CircularUserCollectionViewCellViewModelFactory: CollectionViewCellViewModelAbstractFactory {
 
-    func create(user: User, viewController: UIViewController) -> CollectionViewCellViewModel {
+    private let user: User
+    private weak var viewController: UIViewController?
+
+    init(user: User, viewController: UIViewController?) {
+        self.user = user
+        self.viewController = viewController
+    }
+
+    func create() -> CollectionViewCellViewModelProtocol {
         let size = CGSize(width: 300, height: 190)
         let configurationCommand = UserCollectionViewCellConfigurationCommand(user: user, imageNetworkManager: ImageNetworkManager())
         let selectionCommand = UserCollectionViewCellSelectionCommand(viewController: viewController)
-        let commands: [CollectionViewCellCommandKey: CollectionViewCellCommand] = [
+        let commands: [CommandKey: Command] = [
             .configuration: configurationCommand,
             .selection: selectionCommand
         ]

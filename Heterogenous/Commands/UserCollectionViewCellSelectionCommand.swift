@@ -8,16 +8,16 @@
 
 import UIKit
 
-struct UserCollectionViewCellSelectionCommand: CollectionViewCellCommand {
+struct UserCollectionViewCellSelectionCommand: Command {
 
     private weak var viewController: UIViewController?
 
-    init(viewController: UIViewController) {
+    init(viewController: UIViewController?) {
         self.viewController = viewController
     }
 
-    func perform(cell: UICollectionViewCell) {
-        guard let cell = cell as? (UserCollectionViewCell & UICollectionViewCell) else {
+    func perform(arguments: [CommandArgumentKey: Any]?) {
+        guard let cell = arguments?[.cell] as? (UserCollectionViewCell & UICollectionViewCell) else {
             return
         }
 

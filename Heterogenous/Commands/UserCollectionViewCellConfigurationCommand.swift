@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct UserCollectionViewCellConfigurationCommand: CollectionViewCellCommand {
+struct UserCollectionViewCellConfigurationCommand: Command {
 
     private let user: User
     private let imageNetworkManager: ImageNetworkManagerProtocol
@@ -18,8 +18,8 @@ struct UserCollectionViewCellConfigurationCommand: CollectionViewCellCommand {
         self.imageNetworkManager = imageNetworkManager
     }
 
-    func perform(cell: UICollectionViewCell) {
-        guard let cell = cell as? (UICollectionViewCell & UserCollectionViewCell) else {
+    func perform(arguments: [CommandArgumentKey: Any]?) {
+        guard let cell = arguments?[.cell] as? (UICollectionViewCell & UserCollectionViewCell) else {
             return
         }
 

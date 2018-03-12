@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AdvertisementType {
+enum AdvertisementType: String, Codable {
     case image
     case video
     case audio

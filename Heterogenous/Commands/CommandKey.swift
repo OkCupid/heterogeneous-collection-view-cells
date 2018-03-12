@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CollectionViewCellCommandKey {
+enum CommandKey {
     case configuration
     case cancellation
     case selection

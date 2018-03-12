@@ -7,22 +7,21 @@
 //
 
 import UIKit
+import SafariServices
 
-struct AdvertisementCollectionViewCellSelectionCommand: CollectionViewCellCommand {
+struct AdvertisementCollectionViewCellSelectionCommand: Command {
 
-    private let application: UIApplication
     private let advertisement: Advertisement
+    private weak var viewController: UIViewController?
 
-    init(advertisement: Advertisement, application: UIApplication) {
-        self.application = application
+    init(advertisement: Advertisement, viewController: UIViewController?) {
         self.advertisement = advertisement
+        self.viewController = viewController
     }
 
-    func perform(cell: UICollectionViewCell) {
-
-        if application.canOpenURL(advertisement.clickthroughUrl) {
-            application.open(advertisement.clickthroughUrl, options: [:], completionHandler: nil)
-        }
-
+    func perform(arguments: [CommandArgumentKey: Any]?) {
+        let safariViewController = SFSafariViewController(url: advertisement.clickthroughUrl)
+        safariViewController.dismissButtonStyle = .close
+        viewController?.present(safariViewController, animated: true, completion: nil)
     }
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B90C1C481F965B940094A60A /* CollectionViewCellCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C1C471F965B940094A60A /* CollectionViewCellCommand.swift */; };
-		B90C1C4A1F965BBF0094A60A /* CollectionViewCellCommandKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C1C491F965BBF0094A60A /* CollectionViewCellCommandKey.swift */; };
+		B90C1C481F965B940094A60A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C1C471F965B940094A60A /* Command.swift */; };
+		B90C1C4A1F965BBF0094A60A /* CommandKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C1C491F965BBF0094A60A /* CommandKey.swift */; };
 		B90C1C4C1F967A3A0094A60A /* AdvertisementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C1C4B1F967A3A0094A60A /* AdvertisementType.swift */; };
 		B90C1C501F968B990094A60A /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C1C4F1F968B990094A60A /* ImageZoomViewController.swift */; };
 		B90C1C521F968BC70094A60A /* Zoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C1C511F968BC70094A60A /* Zoom.storyboard */; };
@@ -26,6 +26,15 @@
 		B91652CD1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91652CC1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift */; };
 		B91652CF1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */; };
 		B91652D21F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */; };
+		B92ACF152056C90E00BB675E /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ACF142056C90E00BB675E /* JSONDecoderExtension.swift */; };
+		B92ACF172056CA0A00BB675E /* AnyUserListItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ACF162056CA0A00BB675E /* AnyUserListItemFactory.swift */; };
+		B956F40F2052EBB100ADB5D0 /* CommandArgumentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956F40E2052EBB100ADB5D0 /* CommandArgumentKey.swift */; };
+		B956F4112052EE4500ADB5D0 /* CollectionViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956F4102052EE4500ADB5D0 /* CollectionViewCellViewModelProtocol.swift */; };
+		B956F4132052EF2000ADB5D0 /* CollectionViewCellViewModelAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956F4122052EF2000ADB5D0 /* CollectionViewCellViewModelAbstractFactory.swift */; };
+		B956F4152052EF3800ADB5D0 /* CollectionViewCellViewModelExpander.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956F4142052EF3800ADB5D0 /* CollectionViewCellViewModelExpander.swift */; };
+		B956F4172052F6E700ADB5D0 /* AnyUserListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956F4162052F6E700ADB5D0 /* AnyUserListItem.swift */; };
+		B956F41920530B6800ADB5D0 /* UserListItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956F41820530B6800ADB5D0 /* UserListItemType.swift */; };
+		B956F41B205312B200ADB5D0 /* user_list_items.json in Resources */ = {isa = PBXBuildFile; fileRef = B956F41A205312B200ADB5D0 /* user_list_items.json */; };
 		B9860D4C1F96A51600C50F60 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9860D4B1F96A51600C50F60 /* UserCollectionViewCell.swift */; };
 		B9860D821F97E15600C50F60 /* CollectionViewCellMacroCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */; };
 		B987B8B91F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987B8B81F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift */; };
@@ -53,8 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B90C1C471F965B940094A60A /* CollectionViewCellCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellCommand.swift; sourceTree = "<group>"; };
-		B90C1C491F965BBF0094A60A /* CollectionViewCellCommandKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellCommandKey.swift; sourceTree = "<group>"; };
+		B90C1C471F965B940094A60A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		B90C1C491F965BBF0094A60A /* CommandKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandKey.swift; sourceTree = "<group>"; };
 		B90C1C4B1F967A3A0094A60A /* AdvertisementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementType.swift; sourceTree = "<group>"; };
 		B90C1C4F1F968B990094A60A /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		B90C1C511F968BC70094A60A /* Zoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Zoom.storyboard; sourceTree = "<group>"; };
@@ -72,6 +81,15 @@
 		B91652CC1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSnapshotCollectionViewCellViewModelFactory.swift; sourceTree = "<group>"; };
 		B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCollectionViewCellViewModelFactory.swift; sourceTree = "<group>"; };
 		B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCollectionViewCellSelectionCommand.swift; sourceTree = "<group>"; };
+		B92ACF142056C90E00BB675E /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
+		B92ACF162056CA0A00BB675E /* AnyUserListItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUserListItemFactory.swift; sourceTree = "<group>"; };
+		B956F40E2052EBB100ADB5D0 /* CommandArgumentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandArgumentKey.swift; sourceTree = "<group>"; };
+		B956F4102052EE4500ADB5D0 /* CollectionViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		B956F4122052EF2000ADB5D0 /* CollectionViewCellViewModelAbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModelAbstractFactory.swift; sourceTree = "<group>"; };
+		B956F4142052EF3800ADB5D0 /* CollectionViewCellViewModelExpander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModelExpander.swift; sourceTree = "<group>"; };
+		B956F4162052F6E700ADB5D0 /* AnyUserListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUserListItem.swift; sourceTree = "<group>"; };
+		B956F41820530B6800ADB5D0 /* UserListItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListItemType.swift; sourceTree = "<group>"; };
+		B956F41A205312B200ADB5D0 /* user_list_items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user_list_items.json; sourceTree = "<group>"; };
 		B9860D4B1F96A51600C50F60 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellMacroCommand.swift; sourceTree = "<group>"; };
 		B987B8B81F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSnapshotCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -117,7 +135,6 @@
 				B987B8BA1F95328F00FE0DAA /* CircularUserCollectionViewCell.swift */,
 				B9860D4B1F96A51600C50F60 /* UserCollectionViewCell.swift */,
 				B987B8B81F95300A00FE0DAA /* UserSnapshotCollectionViewCell.swift */,
-				B91652CC1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -127,8 +144,11 @@
 			children = (
 				B91296A11F95674F00ACCA68 /* Advertisement.swift */,
 				B90C1C4B1F967A3A0094A60A /* AdvertisementType.swift */,
+				B956F4162052F6E700ADB5D0 /* AnyUserListItem.swift */,
 				B9A165641F95048C00B7D8EF /* CollectionViewCellViewModel.swift */,
+				B956F4102052EE4500ADB5D0 /* CollectionViewCellViewModelProtocol.swift */,
 				B9A165661F95067500B7D8EF /* User.swift */,
+				B956F41820530B6800ADB5D0 /* UserListItemType.swift */,
 				B9A165681F95068C00B7D8EF /* UserType.swift */,
 			);
 			path = Models;
@@ -164,14 +184,31 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B92ACF132056C90300BB675E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B92ACF142056C90E00BB675E /* JSONDecoderExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B92ACF182056CC1600BB675E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				B956F41A205312B200ADB5D0 /* user_list_items.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		B9860D7D1F97CD7100C50F60 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				B90C1C491F965BBF0094A60A /* CollectionViewCellCommandKey.swift */,
-				B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */,
-				B90C1C471F965B940094A60A /* CollectionViewCellCommand.swift */,
 				B912969F1F9566FC00ACCA68 /* AdvertisementCollectionViewCellConfigurationCommand.swift */,
 				B91652D11F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift */,
+				B9860D811F97E15600C50F60 /* CollectionViewCellMacroCommand.swift */,
+				B90C1C471F965B940094A60A /* Command.swift */,
+				B956F40E2052EBB100ADB5D0 /* CommandArgumentKey.swift */,
+				B90C1C491F965BBF0094A60A /* CommandKey.swift */,
 				B912969D1F95668300ACCA68 /* UserCollectionViewCellConfigurationCommand.swift */,
 				B90C1C531F968E510094A60A /* UserCollectionViewCellSelectionCommand.swift */,
 				B91296921F95639000ACCA68 /* UserSnapshotCollectionViewCellConfigurationCommand.swift */,
@@ -184,7 +221,11 @@
 			children = (
 				B91652CE1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift */,
 				B91652CA1F9656F400FDB587 /* CircularUserCollectionViewCellViewModelFactory.swift */,
+				B956F4122052EF2000ADB5D0 /* CollectionViewCellViewModelAbstractFactory.swift */,
+				B956F4142052EF3800ADB5D0 /* CollectionViewCellViewModelExpander.swift */,
 				B91296901F95625A00ACCA68 /* UsersCollectionViewCellViewModelFactory.swift */,
+				B91652CC1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift */,
+				B92ACF162056CA0A00BB675E /* AnyUserListItemFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -214,7 +255,9 @@
 				B9A1654B1F95042400B7D8EF /* Assets.xcassets */,
 				B912968D1F953D9200ACCA68 /* Cells */,
 				B9860D7D1F97CD7100C50F60 /* Commands */,
+				B92ACF132056C90300BB675E /* Extensions */,
 				B9860D7E1F97CDBF00C50F60 /* Factories */,
+				B92ACF182056CC1600BB675E /* Fixtures */,
 				B9A165501F95042400B7D8EF /* Info.plist */,
 				B912968E1F953DA300ACCA68 /* Models */,
 				B91296941F95644800ACCA68 /* Networking */,
@@ -319,6 +362,7 @@
 				B9A1654F1F95042400B7D8EF /* LaunchScreen.storyboard in Resources */,
 				B90C1C521F968BC70094A60A /* Zoom.storyboard in Resources */,
 				B9A1654C1F95042400B7D8EF /* Assets.xcassets in Resources */,
+				B956F41B205312B200ADB5D0 /* user_list_items.json in Resources */,
 				B9A1654A1F95042400B7D8EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,17 +383,24 @@
 			files = (
 				B912969C1F9564DB00ACCA68 /* Cancellable.swift in Sources */,
 				B90C1C501F968B990094A60A /* ImageZoomViewController.swift in Sources */,
+				B92ACF172056CA0A00BB675E /* AnyUserListItemFactory.swift in Sources */,
 				B91652CD1F96572600FDB587 /* UserSnapshotCollectionViewCellViewModelFactory.swift in Sources */,
 				B912969E1F95668300ACCA68 /* UserCollectionViewCellConfigurationCommand.swift in Sources */,
+				B956F4132052EF2000ADB5D0 /* CollectionViewCellViewModelAbstractFactory.swift in Sources */,
 				B91296A21F95674F00ACCA68 /* Advertisement.swift in Sources */,
+				B956F40F2052EBB100ADB5D0 /* CommandArgumentKey.swift in Sources */,
 				B91296931F95639000ACCA68 /* UserSnapshotCollectionViewCellConfigurationCommand.swift in Sources */,
 				B9860D4C1F96A51600C50F60 /* UserCollectionViewCell.swift in Sources */,
 				B9860D821F97E15600C50F60 /* CollectionViewCellMacroCommand.swift in Sources */,
-				B90C1C4A1F965BBF0094A60A /* CollectionViewCellCommandKey.swift in Sources */,
+				B90C1C4A1F965BBF0094A60A /* CommandKey.swift in Sources */,
 				B91296911F95625A00ACCA68 /* UsersCollectionViewCellViewModelFactory.swift in Sources */,
-				B90C1C481F965B940094A60A /* CollectionViewCellCommand.swift in Sources */,
+				B956F4112052EE4500ADB5D0 /* CollectionViewCellViewModelProtocol.swift in Sources */,
+				B90C1C481F965B940094A60A /* Command.swift in Sources */,
+				B956F4152052EF3800ADB5D0 /* CollectionViewCellViewModelExpander.swift in Sources */,
+				B956F41920530B6800ADB5D0 /* UserListItemType.swift in Sources */,
 				B91652CF1F96575000FDB587 /* AdvertisementCollectionViewCellViewModelFactory.swift in Sources */,
 				B90C1C541F968E510094A60A /* UserCollectionViewCellSelectionCommand.swift in Sources */,
+				B956F4172052F6E700ADB5D0 /* AnyUserListItem.swift in Sources */,
 				B987B8BD1F9533FA00FE0DAA /* AdvertisementCollectionViewCell.swift in Sources */,
 				B91652D21F9658F500FDB587 /* AdvertisementCollectionViewCellSelectionCommand.swift in Sources */,
 				B912969A1F9564B500ACCA68 /* URLSessionTaskProtocol.swift in Sources */,
@@ -358,6 +409,7 @@
 				B987B8BB1F95328F00FE0DAA /* CircularUserCollectionViewCell.swift in Sources */,
 				B9A165651F95048C00B7D8EF /* CollectionViewCellViewModel.swift in Sources */,
 				B91296961F95645B00ACCA68 /* ImageNetworkManagerProtocol.swift in Sources */,
+				B92ACF152056C90E00BB675E /* JSONDecoderExtension.swift in Sources */,
 				B91652CB1F9656F400FDB587 /* CircularUserCollectionViewCellViewModelFactory.swift in Sources */,
 				B91296981F95647E00ACCA68 /* ImageNetworkManager.swift in Sources */,
 				B9A165451F95042400B7D8EF /* AppDelegate.swift in Sources */,

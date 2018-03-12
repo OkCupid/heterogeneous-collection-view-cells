@@ -8,8 +8,8 @@
 
 import UIKit
 
-struct CollectionViewCellViewModel {
+struct CollectionViewCellViewModel: CollectionViewCellViewModelProtocol {
     let identifier: String
     let size: CGSize
-    let commands: [CollectionViewCellCommandKey: CollectionViewCellCommand]
+    let commands: [CommandKey: Command]
 }
